@@ -19,7 +19,7 @@ public class Client extends Audit implements Serializable {
 
     private String name;
 
-    private String lastname;
+    private String fullName;
 
     private String companyName;
 
