@@ -2,8 +2,9 @@ package br.com.gabriel.springdataprojection.entity.projections;
 
 import org.springframework.beans.factory.annotation.Value;
 
-public interface ClientViewSales {
+import java.time.LocalDate;
 
+public interface ClientViewSales {
 
     @Value("#{target.name + ' ' + target.lastName}") //OPEN PROJECTIONS
     String getFullName();
@@ -11,4 +12,7 @@ public interface ClientViewSales {
     String getCompanyName();
 
     String getZipCode();
+
+    @Value("#{target.dateBirdOrdCreated.getYear()}")
+    Integer getAge();
 }

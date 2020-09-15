@@ -7,5 +7,5 @@ spring:
 
 
 project-description: '@project.description@'
-project-title: Spring Projection And Open Feign
+project-title: Spring Data Projection
 project-version: '@project.version@'

@@ -2,10 +2,12 @@ package br.com.gabriel.springdataprojection.entity;
 
 import br.com.gabriel.springdataprojection.entity.enums.ClientType;
 import lombok.Data;
+import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import java.io.Serializable;
+import java.time.LocalDate;
 
 @Table
 @Data
@@ -31,8 +33,10 @@ public class Client extends Audit implements Serializable {
 
     private String generalRecord;
 
+    @Column(name = "DATE_BIRD_CREATED")
+    private LocalDate dateBirdOrdCreated;
+
     @NotNull
     @Enumerated(EnumType.STRING)
     private ClientType clientType;
-
 }
