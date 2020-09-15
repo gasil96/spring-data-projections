@@ -1,0 +1,8 @@
+spring:
+  h2:
+    console:
+      path: /h2
+
+project-description: '@project.description@'
+project-title: Spring Projection And Open Feign
+project-version: '@project.version@'
