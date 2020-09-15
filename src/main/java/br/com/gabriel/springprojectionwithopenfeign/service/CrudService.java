@@ -10,7 +10,7 @@ public interface CrudService<T>  {
 
     T save(T genericClass);
 
-    T Update(T genericClass);
+    T update(T genericClass);
 
     void delete(Long id);
 

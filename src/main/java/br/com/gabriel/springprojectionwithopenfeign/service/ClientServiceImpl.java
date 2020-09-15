@@ -20,7 +20,7 @@ public class ClientServiceImpl implements IClientService {
     }
 
     @Override
-    public Client Update(Client genericClass) {
+    public Client update(Client genericClass) {
         return clientRepository.save(genericClass);
     }
 

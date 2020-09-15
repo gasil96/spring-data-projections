@@ -16,7 +16,7 @@ public interface CrudController<T> {
     ResponseEntity<T> update(@RequestBody T genericClass);
 
     @DeleteMapping("delete-by-id/{id}")
-    void delete(@PathVariable("id") Long id);
+    ResponseEntity delete(@PathVariable("id") Long id);
 
     @GetMapping("find-by-id/{id}")
     ResponseEntity<Optional<T>> findById(@PathVariable("id") Long id);

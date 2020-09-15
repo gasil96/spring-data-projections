@@ -29,7 +29,6 @@ public class Client extends Audit implements Serializable {
     @NotNull
     private String cpfCnpj;
 
-    @NotNull
     private String generalRecord;
 
     @NotNull
