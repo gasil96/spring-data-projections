@@ -1,4 +1,4 @@
-package br.com.gabriel.springprojectionwithopenfeign.entity.enums;
+package br.com.gabriel.springdataprojection.entity.enums;
 
 public enum ClientType {
 

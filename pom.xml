@@ -9,11 +9,11 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>br.com.gabriel</groupId>
-    <artifactId>spring-projection-with-openfeign</artifactId>
+    <artifactId>spring-projection</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>spring-projection-with-openfeign</name>
+    <name>spring-data-projection</name>
     <description>
-        Demo project of api model with open feign and projections
+        Demo project of projections
     </description>
 
     <properties>

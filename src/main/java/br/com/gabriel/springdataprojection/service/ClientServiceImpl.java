@@ -1,7 +1,7 @@
-package br.com.gabriel.springprojectionwithopenfeign.service;
+package br.com.gabriel.springdataprojection.service;
 
-import br.com.gabriel.springprojectionwithopenfeign.entity.Client;
-import br.com.gabriel.springprojectionwithopenfeign.repository.ClientRepository;
+import br.com.gabriel.springdataprojection.entity.Client;
+import br.com.gabriel.springdataprojection.repository.ClientRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

@@ -1,19 +1,13 @@
 INSERT INTO CLIENT(ID_CLIENT, CREATED, IP_AUTH, MODIFY, CLIENT_TYPE, COMPANY_NAME, CPF_CNPJ,
-                   GENERAL_RECORD, FULL_NAME, ZIP_CODE)
-VALUES (1, '2020-09-14', '192.168.0.1', NULL, 'PF', NULL, '02142921264',
-        '5202833', 'Gabriel Silva Silva', '66820020'),
-       (2, '2020-09-14', '192.168.0.1', NULL, 'PF', NULL, '02142921264',
-        '5202833', 'Rafael Ribeiro Santos', '66820020'),
-       (3, '2020-09-14', '192.168.0.1', NULL, 'PF', NULL, '02142921264',
-        '5202833', 'Breno Marques de Carvalho','66820020'),
-       (4, '2020-09-14', '192.168.0.1', NULL, 'PF', NULL, '02142921264',
-       '5202833',  'Bianca Beatriz Chaves Ribeiro', '66820020'),
-       (5, '2020-09-14', '192.168.0.1', NULL, 'PF', NULL, '02142921264',
-        '5202833', 'Mary Nazareth Antunes', '66820020'),
-       (7, '2020-09-14', '192.168.0.1', NULL, 'PJ', 'Red Hat Company', '40789650000182', NULL, NULL, '66820020'),
-       (8, '2020-09-14', '192.168.0.1', NULL, 'PJ', 'Rcf People Soft', '41111150000182', NULL, NULL, '66820020'),
-       (9, '2020-09-14', '192.168.0.1', NULL, 'PJ', 'Microsoft Linc', '44321650000182', NULL,  NULL, '66820020');
+                   GENERAL_RECORD, LAST_NAME, NAME, ZIP_CODE)
+VALUES (1, '2020-09-14', '192.168.0.1', NULL, 'PF', NULL, '02142921264', '5202833', 'Silva', 'Gabriel', '66820020'),
+       (2, '2020-09-14', '192.168.0.1', NULL, 'PF', NULL, '02142921264', '5202833', 'Souza', 'Rafael', '66820020'),
+       (3, '2020-09-14', '192.168.0.1', NULL, 'PF', NULL, '02142921264', '5202833', 'Ribeiro', 'Gesonel', '66820020'),
+       (4, '2020-09-14', '192.168.0.1', NULL, 'PF', NULL, '02142921264', '5202833', 'Santos', 'Galadriel', '66820020'),
+       (5, '2020-09-14', '192.168.0.1', NULL, 'PF', NULL, '02142921264', '5202833', 'Filho', 'Amenadiel', '66820020'),
+       (7, '2020-09-14', '192.168.0.1', NULL, 'PJ', NULL, '40789650000182', NULL, NULL, NULL, '66820020'),
+       (8, '2020-09-14', '192.168.0.1', NULL, 'PJ', 'Rcf People Soft', '41111150000182', NULL, NULL, NULL, '66820020'),
+       (9, '2020-09-14', '192.168.0.1', NULL, 'PJ', 'Microsoft Linc', '44321650000182', NULL, NULL, NULL, '66820020');
 INSERT INTO ACCOUNT (ID_ACCOUNT, AGENCY, ACCOUNT_NUMBER, BALANCE, NAME_BANK, SAVINGS_BALANCE, ID_CLIENT_FK, CREATED,
             IP_AUTH, MODIFY)
 VALUES (1, '0001', '2003011', NULL, 'BANCO DO BRASIL S/A', '2003011500', 1, '2020-09-14', '192.168.0.1', NULL);
-

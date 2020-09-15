@@ -1,8 +1,8 @@
-package br.com.gabriel.springprojectionwithopenfeign.service;
+package br.com.gabriel.springdataprojection.service;
 
-import br.com.gabriel.springprojectionwithopenfeign.entity.Account;
-import br.com.gabriel.springprojectionwithopenfeign.entity.projections.AccountViewSales;
-import br.com.gabriel.springprojectionwithopenfeign.repository.AccountRepository;
+import br.com.gabriel.springdataprojection.entity.Account;
+import br.com.gabriel.springdataprojection.entity.projections.AccountViewSales;
+import br.com.gabriel.springdataprojection.repository.AccountRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

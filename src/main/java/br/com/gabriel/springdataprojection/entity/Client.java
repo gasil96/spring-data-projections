@@ -1,6 +1,6 @@
-package br.com.gabriel.springprojectionwithopenfeign.entity;
+package br.com.gabriel.springdataprojection.entity;
 
-import br.com.gabriel.springprojectionwithopenfeign.entity.enums.ClientType;
+import br.com.gabriel.springdataprojection.entity.enums.ClientType;
 import lombok.Data;
 
 import javax.persistence.*;
@@ -19,7 +19,7 @@ public class Client extends Audit implements Serializable {
 
     private String name;
 
-    private String fullName;
+    private String lastName;
 
     private String companyName;
 

@@ -1,4 +1,4 @@
-package br.com.gabriel.springprojectionwithopenfeign.entity;
+package br.com.gabriel.springdataprojection.entity;
 
 import lombok.Data;
 import org.slf4j.Logger;

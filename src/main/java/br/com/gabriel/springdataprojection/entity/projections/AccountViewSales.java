@@ -1,4 +1,4 @@
-package br.com.gabriel.springprojectionwithopenfeign.entity.projections;
+package br.com.gabriel.springdataprojection.entity.projections;
 
 public interface AccountViewSales {
 

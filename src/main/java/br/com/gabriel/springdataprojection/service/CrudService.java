@@ -1,4 +1,4 @@
-package br.com.gabriel.springprojectionwithopenfeign.service;
+package br.com.gabriel.springdataprojection.service;
 
 import org.springframework.stereotype.Service;
 

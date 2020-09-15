@@ -1,10 +1,8 @@
-package br.com.gabriel.springprojectionwithopenfeign.controller;
+package br.com.gabriel.springdataprojection.controller;
 
-import br.com.gabriel.springprojectionwithopenfeign.entity.Account;
-import br.com.gabriel.springprojectionwithopenfeign.entity.projections.AccountViewSales;
-import br.com.gabriel.springprojectionwithopenfeign.repository.AccountRepository;
-import br.com.gabriel.springprojectionwithopenfeign.service.AccountServiceImpl;
-import br.com.gabriel.springprojectionwithopenfeign.service.IAccountService;
+import br.com.gabriel.springdataprojection.entity.Account;
+import br.com.gabriel.springdataprojection.entity.projections.AccountViewSales;
+import br.com.gabriel.springdataprojection.service.IAccountService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -17,7 +15,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping
-public class AccountController extends CrudControllerDefault<Account, AccountRepository> {
+public class AccountController extends CrudControllerDefault<Account, IAccountService> {
 
     @Autowired
     private IAccountService accountService;
