@@ -12,7 +12,7 @@ import java.util.Optional;
 public abstract class CrudControllerDefault<T, Z extends CrudService> {
 
     @Autowired
-    Z genericService;
+    private Z genericService;
 
     @PostMapping("save")
     public ResponseEntity<T> save(@RequestBody T genericClass){
