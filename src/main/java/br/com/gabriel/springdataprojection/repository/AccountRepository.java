@@ -8,5 +8,8 @@ import java.util.List;
 
 public interface AccountRepository extends JpaRepository<Account, Long> {
 
+    List<Account> findByAgencyOrderByAgency(String agency);
+
     List<AccountViewSales> findByAgency(String agency);
+
 }

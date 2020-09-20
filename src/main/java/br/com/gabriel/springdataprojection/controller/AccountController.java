@@ -22,8 +22,13 @@ public class AccountController extends CrudControllerDefault<Account, IAccountSe
     @Autowired
     private IAccountService accountService;
 
+    @GetMapping("find-per-agency")
+    public ResponseEntity<List<Account>> findAccountByAgency(@RequestParam("agency") String agency) {
+        return new ResponseEntity<List<Account>>(accountService.findByAgencyOrderByAgency(agency), HttpStatus.OK);
+    }
+
     @GetMapping("find-per-agency-view-sales")
-    public ResponseEntity<List<AccountViewSales>> findViewByAgency(@RequestParam("agency") String agency){
+    public ResponseEntity<List<AccountViewSales>> findViewByAgency(@RequestParam("agency") String agency) {
         return new ResponseEntity<List<AccountViewSales>>(accountService.findByAgency(agency), HttpStatus.OK);
     }
 

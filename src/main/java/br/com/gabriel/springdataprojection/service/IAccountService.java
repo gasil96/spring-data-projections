@@ -9,4 +9,6 @@ public interface IAccountService extends CrudService<Account> {
 
     List<AccountViewSales> findByAgency(String agency);
 
+    List<Account> findByAgencyOrderByAgency(String agency);
+
 }

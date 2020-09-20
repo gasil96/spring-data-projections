@@ -44,4 +44,9 @@ public class AccountServiceImpl implements IAccountService{
     public List<AccountViewSales> findByAgency(String agency) {
         return accountRepository.findByAgency(agency);
     }
+
+    @Override
+    public List<Account> findByAgencyOrderByAgency(String agency) {
+        return accountRepository.findByAgencyOrderByAgency(agency);
+    }
 }
